@@ -1,0 +1,18 @@
+<h1> Inventario </h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Cantidad Disponible</th>
+        <th></th>
+    </tr>
+    <%  @productos.each do |iterable| %>
+        <tr>
+            <td> <%= iterable.id %> </td>
+            <td> <%= iterable.nombre %> </td>
+            <td> <%= iterable.cantidad %> </td>
+            <td> <%= link_to 'Destroy' , producto_path(iterable), method: :delete %></td>
+            <br>
+        </tr>
+    <% end %>
+</table>

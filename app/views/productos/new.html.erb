@@ -1,0 +1,14 @@
+<%= form_with scope: :producto, url: productos_path, local: true do |form| %>
+	<h2>
+		<%= form.label :nombre %>
+		<%= form.text_area :nombre %>
+
+	</h2>
+	<h2>
+		<%= form.label :cantidad %>
+		<%= form.number_field :cantidad %>
+	</h2>
+	<p>
+		<%= form.submit %>
+	</p>
+<% end %>
