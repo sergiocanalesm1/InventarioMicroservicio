@@ -1,5 +1,5 @@
 # Stock Microservice
-microservice practice developed in Ruby on Rails
+microservice architecture practice developed using Ruby on Rails
 
 # README
 
